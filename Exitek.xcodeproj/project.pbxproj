@@ -17,6 +17,10 @@
 		6D079F8A28D3954800D56078 /* ExitekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D079F8928D3954800D56078 /* ExitekTests.swift */; };
 		6D079F9428D3954800D56078 /* ExitekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D079F9328D3954800D56078 /* ExitekUITests.swift */; };
 		6D079F9628D3954800D56078 /* ExitekUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D079F9528D3954800D56078 /* ExitekUITestsLaunchTests.swift */; };
+		6D079FA428D3964200D56078 /* MobileItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D079FA228D3964200D56078 /* MobileItem+CoreDataClass.swift */; };
+		6D079FA528D3964200D56078 /* MobileItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D079FA328D3964200D56078 /* MobileItem+CoreDataProperties.swift */; };
+		6D079FAC28D3999D00D56078 /* MobileStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D079FAB28D3999D00D56078 /* MobileStorageProtocol.swift */; };
+		6D079FAE28D39A2300D56078 /* MobileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D079FAD28D39A2300D56078 /* MobileStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		6D079F8F28D3954800D56078 /* ExitekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExitekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D079F9328D3954800D56078 /* ExitekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitekUITests.swift; sourceTree = "<group>"; };
 		6D079F9528D3954800D56078 /* ExitekUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitekUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D079FA228D3964200D56078 /* MobileItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6D079FA328D3964200D56078 /* MobileItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6D079FAB28D3999D00D56078 /* MobileStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileStorageProtocol.swift; sourceTree = "<group>"; };
+		6D079FAD28D39A2300D56078 /* MobileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		6D079F6328D3954200D56078 = {
 			isa = PBXGroup;
 			children = (
+				6D079FA628D3966E00D56078 /* Models */,
 				6D079F6E28D3954300D56078 /* Exitek */,
 				6D079F8828D3954800D56078 /* ExitekTests */,
 				6D079F9228D3954800D56078 /* ExitekUITests */,
@@ -101,14 +110,12 @@
 		6D079F6E28D3954300D56078 /* Exitek */ = {
 			isa = PBXGroup;
 			children = (
-				6D079F6F28D3954300D56078 /* AppDelegate.swift */,
-				6D079F7128D3954300D56078 /* SceneDelegate.swift */,
-				6D079F7328D3954300D56078 /* ViewController.swift */,
-				6D079F7528D3954300D56078 /* Main.storyboard */,
-				6D079F7B28D3954700D56078 /* Assets.xcassets */,
-				6D079F7D28D3954700D56078 /* LaunchScreen.storyboard */,
-				6D079F8028D3954700D56078 /* Info.plist */,
+				6D079FAF28D3ACFD00D56078 /* SupportFiles */,
+				6D079FB028D3AD4500D56078 /* Controllers */,
+				6D079FAB28D3999D00D56078 /* MobileStorageProtocol.swift */,
+				6D079FAD28D39A2300D56078 /* MobileStorage.swift */,
 				6D079F7828D3954300D56078 /* Exitek.xcdatamodeld */,
+				6D079F8028D3954700D56078 /* Info.plist */,
 			);
 			path = Exitek;
 			sourceTree = "<group>";
@@ -128,6 +135,35 @@
 				6D079F9528D3954800D56078 /* ExitekUITestsLaunchTests.swift */,
 			);
 			path = ExitekUITests;
+			sourceTree = "<group>";
+		};
+		6D079FA628D3966E00D56078 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D079FA328D3964200D56078 /* MobileItem+CoreDataProperties.swift */,
+				6D079FA228D3964200D56078 /* MobileItem+CoreDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D079FAF28D3ACFD00D56078 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6D079F6F28D3954300D56078 /* AppDelegate.swift */,
+				6D079F7128D3954300D56078 /* SceneDelegate.swift */,
+				6D079F7528D3954300D56078 /* Main.storyboard */,
+				6D079F7B28D3954700D56078 /* Assets.xcassets */,
+				6D079F7D28D3954700D56078 /* LaunchScreen.storyboard */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		6D079FB028D3AD4500D56078 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D079F7328D3954300D56078 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D079FA528D3964200D56078 /* MobileItem+CoreDataProperties.swift in Sources */,
 				6D079F7428D3954300D56078 /* ViewController.swift in Sources */,
 				6D079F7A28D3954300D56078 /* Exitek.xcdatamodeld in Sources */,
 				6D079F7028D3954300D56078 /* AppDelegate.swift in Sources */,
+				6D079FAE28D39A2300D56078 /* MobileStorage.swift in Sources */,
+				6D079FAC28D3999D00D56078 /* MobileStorageProtocol.swift in Sources */,
+				6D079FA428D3964200D56078 /* MobileItem+CoreDataClass.swift in Sources */,
 				6D079F7228D3954300D56078 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
